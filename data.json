@@ -1,0 +1,1 @@
+{"train_csv": "C:/Users/ADMIN/Desktop/projects/kaggle subs/comp2/train.csv", "test_csv": "C:/Users/ADMIN/Desktop/projects/kaggle subs/comp2/test.csv", "out_path": "C:/Users/ADMIN/Desktop/projects/kaggle subs/comp2/submission.csv", "subm_cols": ["id", "exam_score"], "y": "exam_score", "id": "id"}
