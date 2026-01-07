@@ -16,8 +16,9 @@ This project uses:
 - **Python 3**
 - Core Python libraries (standard library)
 - (Optional) **NumPy**, **Pandas**, **Scikit-learn**, **TensorFlow**,
+  
+#Overview
 
- ##Overview
 - The repository was made following the Kaggle introduction to machine learning course and abit of research from the tensorflow youtube channel
 - 
 
