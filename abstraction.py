@@ -1,5 +1,5 @@
 from sklearn.metrics import root_mean_squared_error as rmse
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import HistGradientBoostingRegressor 
 from oop_approach import KagglePipeline
 import pandas as pd
 
@@ -52,12 +52,13 @@ class Main:
         )
 if __name__ == "__main__":
     dt={
-        "train_csv":"C:/Users/ADMIN/Desktop/projects/kaggle subs/comp2/train.csv" ,
-        "test_csv":"C:/Users/ADMIN/Desktop/projects/kaggle subs/comp2/test.csv" ,
-        "out_path":"C:/Users/ADMIN/Desktop/projects/kaggle subs/comp2/submission.csv" ,
+        "train_csv":"C:/Users/ADMIN/Desktop/projects/kaggle subs/student exam_score datasets/train.csv" ,
+        "test_csv":"C:/Users/ADMIN/Desktop/projects/kaggle subs/student exam_score datasets/test.csv" ,
+        "out_path":"C:/Users/ADMIN/Desktop/projects/kaggle subs/student exam_score datasets/submission.csv" ,
         "y":"exam_score" ,
         "id":"id" ,
-        "model":RandomForestRegressor(n_estimators=1000) ,
+        "model":HistGradientBoostingRegressor(learning_rate=0.05,max_depth=6,random_state=42,max_iter=3000,min_samples_leaf=20
+),
         }
     run=Main(data=dt)
     r=run.read(subm_cols=["id","exam_score"])
